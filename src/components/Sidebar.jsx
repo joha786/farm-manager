@@ -27,7 +27,7 @@ const navItems = [
 ];
 
 export default function Sidebar({ activePage, setActivePage }) {
-  const { state, dispatch, cloudReady, syncStatus, syncError } = useFarm();
+  const { dispatch, cloudReady, syncStatus, syncError } = useFarm();
 
   return (
     <aside className="sidebar">
@@ -65,7 +65,7 @@ export default function Sidebar({ activePage, setActivePage }) {
             <span>{cloudReady ? 'Connected' : 'Connecting...'}</span>
           </div>
         </div>
-        <small className="backup-status">
+        <small className="cloud-status">
           Last cloud sync: {syncStatus ? new Date(syncStatus).toLocaleString() : 'Waiting for first save'}
         </small>
         {syncError && <small className="sync-error">Sync error: {syncError}</small>}

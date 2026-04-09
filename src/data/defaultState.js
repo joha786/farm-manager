@@ -11,8 +11,6 @@ export const defaultState = {
   reminders: [],
   settings: {
     theme: 'light',
-    lastBackupAt: null,
-    storageDriver: 'supabase',
     lastSyncedAt: null
   },
   updatedAt: today
