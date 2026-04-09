@@ -30,13 +30,3 @@ export const ANIMAL_TYPES = ['Cow', 'Chicken Batch', 'Goose Batch', 'Fish Stock'
 export const CROP_STAGES = ['Planning', 'Planted', 'Growing', 'Flowering', 'Ready to Harvest', 'Harvested'];
 
 export const COLOR_SET = ['#2f7d5c', '#d68c45', '#4d8fb7', '#b44f64', '#667a3d', '#8b6ab0'];
-
-export const IMAGE_KEYWORDS = {
-  'Cow Farm': 'cow farm',
-  'Poultry Farm': 'poultry farm chickens',
-  'Goose Farm': 'goose farm',
-  'Fish Farm': 'fish farm aquaculture',
-  'Rice Field': 'rice field farm',
-  'Potato Field': 'potato field farm',
-  'Tomato Field': 'tomato farm greenhouse'
-};
