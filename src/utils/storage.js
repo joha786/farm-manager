@@ -14,7 +14,7 @@ export async function saveState(state, userId) {
   const nextState = {
     ...state,
     updatedAt: now,
-    settings: { ...state.settings, lastSyncedAt: now }
+    settings: { ...state.settings, storageDriver: 'supabase', lastSyncedAt: now }
   };
   await saveStateToSupabase(nextState, userId);
   return nextState;

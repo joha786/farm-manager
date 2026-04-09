@@ -21,6 +21,8 @@ function reducer(state, action) {
         ...state,
         settings: { ...state.settings, theme: state.settings.theme === 'dark' ? 'light' : 'dark' }
       };
+    case 'backup-stamped':
+      return { ...state, settings: { ...state.settings, lastBackupAt: new Date().toISOString() } };
     case 'add-farm':
       return { ...state, farms: [...state.farms, { ...action.payload, id: uid('farm') }] };
     case 'update-farm':
